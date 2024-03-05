@@ -18,7 +18,9 @@
 
         :root {
             --vermelho: #ea1d2c;
+            --vermelho_escuro: #cc1825;
             --verde: #b7d255;
+            --verde_escuro: #9eb53e;
         }
 
         .bgVermelho {
@@ -29,11 +31,32 @@
             color: var(--vermelho)
         }
 
-        .section{
-            background-image: url(../assets/img/cozinha.jpg);
+        .section {
+            /* background-image: url(../assets/img/cozinha.jpg); */
             background-size: cover;
             /* background-repeat: no-repeat; */
             background-attachment: fixed;
+        }
+
+        .imagem {
+            width: 170px
+            /* height: 56%; */
+        }
+
+        #card-res{
+            background-color: var(--vermelho);
+        }
+
+        .btnRest{
+            background-color: var(--vermelho_escuro);
+        }
+
+        .btnMer{
+            background-color: var(--verde_escuro);
+        }
+
+        #card-mer{
+            background: var(--verde);
         }
     </style>
 </head>
@@ -110,11 +133,40 @@
                 </div>
             </div>
         </section>
-    
-        <section>
-            <div>
-                <div class="border p-3 card">
-                    <h3>Restaurante</h3>
+
+        <section class="container my-5">
+            <div class="d-flex justify-content-center row">
+                <div id="card-res" class="col-md-4 col border rounded-4 py-3 d-flex mx-3 mb-3">
+                    <div class="flex-column text-center">
+                        <div class=" d-md-block d-none">
+                            <h3 class="my-3 text-white fw-bold">Restaurante</h3>
+                            <button class="btnRest btn mt-5 fw-bold text-white">Ver opções ></button>
+                        </div>
+                        <div class="d-md-none d-block">
+                            <h3 class="my-3 text-white fw-bold">Restaurante</h3>
+                            <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
+                            <button class="btnRest btn mt-5 fw-bold text-white">Ver opções ></button>
+                        </div>
+                    </div>
+                    <div class="d-md-block d-none">
+                        <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
+                    </div>
+                </div>
+                <div id="card-mer" class="col-md-4 col border py-3 rounded-4 d-flex mx-3 mb-3">
+                    <div class="flex-column text-center">
+                        <div class="d-md-block d-none">
+                            <h3 class="my-3 text-white fw-bold">Mercado</h3>
+                            <button class="btnMer btn fw-bold text-white mt-5">Ver opções ></button>
+                        </div>
+                        <div class="d-md-none d-block">
+                            <h3 class="my-3 text-white fw-bold">Mercado</h3>
+                            <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
+                            <button class="btnMer btn fw-bold text-white mt-5">Ver opções ></button>
+                        </div>
+                    </div>
+                    <div class="d-md-block d-none" style="">
+                        <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
+                    </div>
                 </div>
             </div>
         </section>
