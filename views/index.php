@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ifood</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
         body {
@@ -21,6 +23,7 @@
             --vermelho_escuro: #cc1825;
             --verde: #b7d255;
             --verde_escuro: #9eb53e;
+            --cinza_claro: #eee;
         }
 
         .bgVermelho {
@@ -40,23 +43,39 @@
 
         .imagem {
             width: 170px
-            /* height: 56%; */
+                /* height: 56%; */
         }
 
-        #card-res{
+        #card-res {
             background-color: var(--vermelho);
+            transition: transform 0.3s ease-in-out;
+            transform: scale(1);
         }
 
-        .btnRest{
+        #card-res:hover {
+            transform: scale(1.05);
+        }
+
+        .btnRest {
             background-color: var(--vermelho_escuro);
         }
 
-        .btnMer{
+        #card-mer {
+            background: var(--verde);
+            transition: transform 0.3s ease-in-out;
+            transform: scale(1);
+        }
+
+        #card-mer:hover {
+            transform: scale(1.05);
+        }
+
+        .btnMer {
             background-color: var(--verde_escuro);
         }
 
-        #card-mer{
-            background: var(--verde);
+        footer {
+            background-color: var(--cinza_claro);
         }
     </style>
 </head>
@@ -140,7 +159,7 @@
                     <div class="flex-column text-center">
                         <div class=" d-md-block d-none">
                             <h3 class="my-3 text-white fw-bold">Restaurante</h3>
-                            <button class="btnRest btn mt-5 fw-bold text-white">Ver opções ></button>
+                            <button class="btnRest btn mt-5 mb-2 fw-bold text-white">Ver opções ></button>
                         </div>
                         <div class="d-md-none d-block">
                             <h3 class="my-3 text-white fw-bold">Restaurante</h3>
@@ -156,7 +175,7 @@
                     <div class="flex-column text-center">
                         <div class="d-md-block d-none">
                             <h3 class="my-3 text-white fw-bold">Mercado</h3>
-                            <button class="btnMer btn fw-bold text-white mt-5">Ver opções ></button>
+                            <button class="btnMer btn fw-bold text-white mt-5 mb-2">Ver opções ></button>
                         </div>
                         <div class="d-md-none d-block">
                             <h3 class="my-3 text-white fw-bold">Mercado</h3>
@@ -171,6 +190,32 @@
             </div>
         </section>
     </main>
+
+    <footer class="d-flex">
+        <div class="p-5 d-flex flex-column text-start">
+            <button class="btn text-start">iFood</button>
+            <button class="btn text-start">Site Institucional</button>
+            <button class="btn text-start">Fale conosco</button>
+            <button class="btn text-start">Carreiras</button>
+            <button class="btn text-start">Entregadores</button>
+        </div>
+        <div class="p-5 d-flex flex-column">
+            <button class="btn text-start">Descubra</button>
+            <button class="btn text-start">Cadastre seu Restaurante ou Mercado</button>
+            <button class="btn text-start">iFood Shop</button>
+            <button class="btn text-start">iFood Card</button>
+            <button class="btn text-start">Blog iFood Empresas</button>
+        </div>
+        <div class="p-5 d-flex flex-column">
+            <button class="btn">Social</button>
+            <div class="">
+                <button class="btn"><i class="bi bi-facebook"></i></button>
+                <button class="btn"><i class="bi bi-twitter"></i></i></button>
+                <button class="btn"><i class="bi bi-youtube"></i></button>
+                <button class="btn"><i class="bi bi-instagram"></i></button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
