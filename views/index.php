@@ -39,6 +39,7 @@
             background-size: cover;
             /* background-repeat: no-repeat; */
             background-attachment: fixed;
+            margin-top: 200px;
         }
 
         .imagem {
@@ -74,15 +75,15 @@
             background-color: var(--verde_escuro);
         }
 
-        footer {
-            background-color: var(--cinza_claro);
+        .icon{
+            font-size: 30px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><svg viewBox="0 -0.35492335728912394 1004 566.9724898595939" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
                         <g fill="#ea1d2c">
@@ -107,7 +108,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Ifood Card</a>
+                            <a class="nav-link active" href="#">iFood Card</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -207,14 +208,16 @@
             <button class="btn text-start">Blog iFood Empresas</button>
         </div>
         <div class="p-5 d-flex flex-column">
-            <button class="btn">Social</button>
+            <button class="btn text-start">Social</button>
             <div class="">
-                <button class="btn"><i class="bi bi-facebook"></i></button>
-                <button class="btn"><i class="bi bi-twitter"></i></i></button>
-                <button class="btn"><i class="bi bi-youtube"></i></button>
-                <button class="btn"><i class="bi bi-instagram"></i></button>
+                <button class="btn icon"><i class="bi bi-facebook"></i></button>
+                <button class="btn icon"><i class="bi bi-twitter"></i></i></button>
+                <button class="btn icon"><i class="bi bi-youtube"></i></button>
+                <button class="btn icon"><i class="bi bi-instagram"></i></button>
             </div>
         </div>
+
+        <hr>
     </footer>
 </body>
 
