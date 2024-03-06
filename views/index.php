@@ -248,16 +248,16 @@
                 </div>
                 <div class="d-flex col-6 mt-3 ">
                     <div class="row">
-                        <a href="" class="col-3 fw-bold">
+                        <a href="#" class="col-3 fw-bold">
                             <span>Termos e condições de uso</span>
                         </a>
-                        <a href="" class="col-3 fw-bold">
+                        <a href="#" class="col-3 fw-bold">
                             <span>Código de conduta</span>
                         </a>
-                        <a href="" class="col-3 fw-bold">
+                        <a href="#" class="col-3 fw-bold">
                             <span>Privacidade</span>
                         </a>
-                        <a href="" class="col-3 fw-bold">
+                        <a href="#" class="col-3 fw-bold">
                             <span>Dicas de segurança</span>
                         </a>
                     </div>
