@@ -38,13 +38,14 @@
             /* background-image: url(../assets/img/cozinha.jpg); */
             background-size: cover;
             /* background-repeat: no-repeat; */
-            background-attachment: fixed;
-            margin-top: 200px;
+            margin-top: 140px;
+            background-image: url(../assets/img/imgFundo.png);
+            padding-bottom: 180px;
         }
 
         .imagem {
-            width: 170px
-                /* height: 56%; */
+            width: 100%;
+            /* margin-top: 50px; */
         }
 
         #card-res {
@@ -75,7 +76,7 @@
             background-color: var(--verde_escuro);
         }
 
-        .icon{
+        .icon {
             font-size: 30px;
         }
     </style>
@@ -83,7 +84,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><svg viewBox="0 -0.35492335728912394 1004 566.9724898595939" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
                         <g fill="#ea1d2c">
@@ -121,34 +122,34 @@
     </header>
 
     <main>
-        <section class="section pb-5">
+        <section class="section">
             <div class="container">
                 <div class="">
                     <h1 class="text-center pt-5 fw-bold">Faça mercado no iFood</h1>
                     <p class="text-center">Entregamos tudo o que precisa na porta da sua casa, de hortifruti a itens de limpeza</p>
                 </div>
                 <form action="">
-                    <div class="d-flex justify-content-center mt-5 mb-2">
-                        <input type="text" placeholder=" Em que endereço você está?" class="rounded w-25 p-2" style="background-color: #eee;">
-                        <button class="btn btn-danger bgVermelho mx-2 px-4 py-2">Ver mercados próximos</button>
+                    <div class="d-flex justify-content-center mt-5 mb-2 row">
+                        <input type="text" placeholder=" Em que endereço você está?" class="col-md-4 rounded border p-2" style="background-color: #eee; ">
+                        <button class="btn btn-danger bgVermelho mx-2 px-4 py-2 col-md-3">Ver mercados próximos</button>
                     </div>
                 </form>
                 <div class="mt-5">
                     <div class="text-center">
-                        <button class="btn bg-white border border-secondary rounded-5">Frios</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Laticínios</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Feira</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Bebidas</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Doces</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Massas frescas</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Limpeza</button>
+                        <button class="btn bg-white border rounded-5">Frios</button>
+                        <button class="btn bg-white border rounded-5">Laticínios</button>
+                        <button class="btn bg-white border rounded-5">Feira</button>
+                        <button class="btn bg-white border rounded-5">Bebidas</button>
+                        <button class="btn bg-white border rounded-5">Doces</button>
+                        <button class="btn bg-white border rounded-5">Massas frescas</button>
+                        <button class="btn bg-white border rounded-5">Limpeza</button>
                     </div>
                     <div class="text-center mt-2">
-                        <button class="btn bg-white border border-secondary rounded-5">Padaria</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Higiene</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Congelados</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Carnes</button>
-                        <button class="btn bg-white border border-secondary rounded-5">Cervejas</button>
+                        <button class="btn bg-white border rounded-5">Padaria</button>
+                        <button class="btn bg-white border rounded-5">Higiene</button>
+                        <button class="btn bg-white border rounded-5">Congelados</button>
+                        <button class="btn bg-white border rounded-5">Carnes</button>
+                        <button class="btn bg-white border rounded-5">Cervejas</button>
                     </div>
                 </div>
             </div>
@@ -160,64 +161,68 @@
                     <div class="flex-column text-center">
                         <div class=" d-md-block d-none">
                             <h3 class="my-3 text-white fw-bold">Restaurante</h3>
-                            <button class="btnRest btn mt-5 mb-2 fw-bold text-white">Ver opções ></button>
+                            <button class="btnRest btn mt-5 mb-2 fw-bold text-white">Ver opções</button>
                         </div>
                         <div class="d-md-none d-block">
                             <h3 class="my-3 text-white fw-bold">Restaurante</h3>
-                            <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
-                            <button class="btnRest btn mt-5 fw-bold text-white">Ver opções ></button>
+                            <img class="imagem landing-v2-multi-categories-big-link__image landing-v2-multi-categories-big-link__image--restaurant" src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png" alt="Ver opções">
+                            <button class="btnRest btn mt-5 fw-bold text-white">Ver opções</button>
                         </div>
                     </div>
                     <div class="d-md-block d-none">
-                        <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
+                        <img class="imagem landing-v2-multi-categories-big-link__image landing-v2-multi-categories-big-link__image--restaurant" src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png" alt="Ver opções">
                     </div>
                 </div>
                 <div id="card-mer" class="col-md-4 col border py-3 rounded-4 d-flex mx-3 mb-3">
                     <div class="flex-column text-center">
                         <div class="d-md-block d-none">
                             <h3 class="my-3 text-white fw-bold">Mercado</h3>
-                            <button class="btnMer btn fw-bold text-white mt-5 mb-2">Ver opções ></button>
+                            <button class="btnMer btn fw-bold text-white mt-5 mb-2">Ver opções </button>
                         </div>
                         <div class="d-md-none d-block">
                             <h3 class="my-3 text-white fw-bold">Mercado</h3>
-                            <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
-                            <button class="btnMer btn fw-bold text-white mt-5">Ver opções ></button>
+                            <img class="imagem landing-v2-multi-categories-big-link__image landing-v2-multi-categories-big-link__image--market" src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/market.png" alt="Buscar lojas">
+                            <button class="btnMer btn fw-bold text-white mt-5">Ver opções</button>
                         </div>
                     </div>
                     <div class="d-md-block d-none" style="">
-                        <img class="imagem" src="../assets/img/tasty-beef-burger-png.webp" alt="">
+                        <img class="imagem landing-v2-multi-categories-big-link__image landing-v2-multi-categories-big-link__image--market" src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/market.png" alt="Buscar lojas">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="d-flex">
-        <div class="p-5 d-flex flex-column text-start">
-            <button class="btn text-start">iFood</button>
-            <button class="btn text-start">Site Institucional</button>
-            <button class="btn text-start">Fale conosco</button>
-            <button class="btn text-start">Carreiras</button>
-            <button class="btn text-start">Entregadores</button>
-        </div>
-        <div class="p-5 d-flex flex-column">
-            <button class="btn text-start">Descubra</button>
-            <button class="btn text-start">Cadastre seu Restaurante ou Mercado</button>
-            <button class="btn text-start">iFood Shop</button>
-            <button class="btn text-start">iFood Card</button>
-            <button class="btn text-start">Blog iFood Empresas</button>
-        </div>
-        <div class="p-5 d-flex flex-column">
-            <button class="btn text-start">Social</button>
-            <div class="">
-                <button class="btn icon"><i class="bi bi-facebook"></i></button>
-                <button class="btn icon"><i class="bi bi-twitter"></i></i></button>
-                <button class="btn icon"><i class="bi bi-youtube"></i></button>
-                <button class="btn icon"><i class="bi bi-instagram"></i></button>
+    <footer class="container">
+        <div class="d-flex">
+            <div class="p-5 d-flex flex-column text-start">
+                <button class="btn text-start">iFood</button>
+                <button class="btn text-start">Site Institucional</button>
+                <button class="btn text-start">Fale conosco</button>
+                <button class="btn text-start">Carreiras</button>
+                <button class="btn text-start">Entregadores</button>
+            </div>
+            <div class="p-5 d-flex flex-column">
+                <button class="btn text-start">Descubra</button>
+                <button class="btn text-start">Cadastre seu Restaurante ou Mercado</button>
+                <button class="btn text-start">iFood Shop</button>
+                <button class="btn text-start">iFood Card</button>
+                <button class="btn text-start">Blog iFood Empresas</button>
+            </div>
+            <div class="p-5 d-flex flex-column">
+                <button class="btn text-start">Social</button>
+                <div class="">
+                    <button class="btn icon"><i class="bi bi-facebook"></i></button>
+                    <button class="btn icon"><i class="bi bi-twitter"></i></i></button>
+                    <button class="btn icon"><i class="bi bi-youtube"></i></button>
+                    <button class="btn icon"><i class="bi bi-instagram"></i></button>
+                </div>
             </div>
         </div>
-
         <hr>
+        <div class="d-flex">
+            <a href="#"><img src="../assets/img/iconFod.png" alt=""></a>
+        </div>
     </footer>
 </body>
 
