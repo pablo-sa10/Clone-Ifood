@@ -24,6 +24,8 @@
             --verde: #b7d255;
             --verde_escuro: #9eb53e;
             --cinza_claro: #eee;
+            --cinza_escuro: #717171;
+            --cinza_mais_escuro: #3e3e3e;
         }
 
         .bgVermelho {
@@ -78,6 +80,17 @@
 
         .icon {
             font-size: 30px;
+        }
+
+        .texto_footer {
+            font-size: 12px;
+            color: var(--cinza_escuro)
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--cinza_mais_escuro);
+            font-size: 15px;
         }
     </style>
 </head>
@@ -191,6 +204,10 @@
                 </div>
             </div>
         </section>
+
+        <section class="container">
+            <h3>Os melhores restaurantes</h3>
+        </section>
     </main>
 
     <footer class="container">
@@ -221,7 +238,31 @@
         </div>
         <hr>
         <div class="d-flex">
-            <a href="#"><img src="../assets/img/iconFod.png" alt=""></a>
+            <div class="row">
+                <div class="col-1" style="margin-right: 20px;">
+                    <a href="#"><img src="../assets/img/iconFod.png" alt=""></a>
+                </div>
+                <div class="col-4 mt-2">
+                    <p class="texto_footer m-0 mb-2">© Copyright 2024 - Pablo - Desenvolvido para afins de estudos S.A.</p>
+                    <p class="texto_footer m-0 mb-4">CNPJ 14.380.200/0001-21 / Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP 06.020-902</p>
+                </div>
+                <div class="d-flex col-6 mt-3 ">
+                    <div class="row">
+                        <a href="" class="col-3 fw-bold">
+                            <span>Termos e condições de uso</span>
+                        </a>
+                        <a href="" class="col-3 fw-bold">
+                            <span>Código de conduta</span>
+                        </a>
+                        <a href="" class="col-3 fw-bold">
+                            <span>Privacidade</span>
+                        </a>
+                        <a href="" class="col-3 fw-bold">
+                            <span>Dicas de segurança</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
