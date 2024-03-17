@@ -1,9 +1,9 @@
 <?php 
 
 class Conexao{
-    private $servidor = "sqlsrv:Server=TAR221\\TARAMPS;Database=Pablo_Projs";
-    private $username = "sa";
-    private $senha = "@TAR2023";
+    private $servidor = "";
+    private $username = "";
+    private $senha = "";
     private $conn;
 
     public function conectar(){
