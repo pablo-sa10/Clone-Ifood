@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+.navbarLista{
+    display: flex;
+    margin-left: 90px;
+    margin-top: 4%;
+    font-family: 'fonteNav';
+    font-weight: bold;
+}
+
+.headerNavBar{
+    background-color: #eb0033;
+    padding: 0px 10px 50px 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+.itens{
+    margin-right: 50px;
+}
+
+.divBtnIfood{
+    margin-top: 1.5%;
+    margin-right: 150px;
+}
+
+.btnIfood{
+    padding: 15px 20px 15px 20px;
+    color: #eb0033;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btnIfood:hover{
+    background-color: #f78da7;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'fonteNav';
+    src: url('../fonts/iFoodRCTextos-Thin.ttf') format('woff2')
+}
