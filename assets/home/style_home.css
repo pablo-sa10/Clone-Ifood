@@ -34,6 +34,10 @@ body {
     /* margin-top: 50px; */
 }
 
+.div-footer{
+    display: flex;
+}
+
 #card-res {
     background-color: var(--vermelho);
     transition: transform 0.3s ease-in-out;
@@ -75,4 +79,32 @@ a {
     text-decoration: none;
     color: var(--cinza_mais_escuro);
     font-size: 15px;
+}
+
+.esconde-desktop{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .div-footer{
+        flex-direction: column;
+    }
+
+    .section{
+        background-image: url('./img/fundo-cel.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .btns{
+        margin-bottom: 10px;
+    }
+
+    .esconde-cel{
+        display: none;
+    }
+
+    .esconde-desktop{
+        display: block;
+    }
 }
