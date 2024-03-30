@@ -1,0 +1,126 @@
+@media screen and (max-width: 991px){
+
+    body{
+        box-sizing: border-box;
+    }
+
+    .d-none_celular{
+        display: none;
+    }
+
+    .block-cel{
+        display: block;
+    }
+
+    .navbarLista{
+        margin: 0;
+    }
+
+    .primeiraDivMain{
+        flex-direction: column;
+        padding: 0;
+        margin: 0 5% 0 5%;
+    }
+
+    .segundaDivMain{
+        margin: 50px 0 0 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .TituloMain{
+        font-size: 35px;
+        margin-bottom: 20px !important;
+    }
+
+    .divTitulosMain{
+        padding: 0;
+    }
+
+    .segundoTituloMain{
+        margin-top: 50px !important;
+    }
+
+    .divSegundoTitulosMain, .divTerceiroTitulosMain{
+        padding: 0;
+    }
+
+    .quartaDivMain{
+        padding: 40px;
+    }
+
+    .cards{
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card1, .card2, .card3{
+        margin: 20px ;
+        width: 90%;
+    }
+
+    .divBtnCard{
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 10px 0;
+    }
+
+    .headerNavBar, main{
+        width: 100%;
+    }
+
+    .headerNavBar{
+        padding: 10px 0px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .divBtnIfood{
+        margin: 0 5%;
+    }
+
+    .segundaDivMain{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-top: 10%;
+    }
+
+    .img-cel, .imgSection{
+        width: 100%;
+    }
+
+    .divTitulosMain{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre, .ajuda, .comunidade{
+        line-height: 30px;
+    }
+
+    .comunidade, .ajuda{
+        margin-top: 30px !important;
+    }
+
+    .divFooter{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .p-footer{
+        margin: 5px;
+    }
+
+    .copy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}

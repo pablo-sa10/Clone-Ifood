@@ -1,6 +1,6 @@
 body{
     display: flex;
-    font-family: sans-serif;
+    font-family: 'fontRegular';
     background-image: url(./img/fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,12 +119,17 @@ a:hover{
     color: white;
 }
 
+.img-cel{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .caixa {
-        margin-top: 20%;
+        margin-top: 5%;
         justify-content: center;
         margin-right: 0;
         padding: 10px;
+        box-shadow: none;
     }
 
     .titulo{
@@ -135,5 +140,26 @@ a:hover{
         display: flex;
         justify-content: center;
         background-image: none;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
     }
+
+    .link{
+        display: none;
+    }
+
+    .img-cel{
+        display: block;
+        background-image: url('./img/fundo_cel.png');
+        width: auto;
+        padding: 150px;
+        background-size: cover;
+    }
+}
+
+@font-face {
+    font-family: 'fontRegular';
+    src: url('../fonts/iFoodRCTextos-Regular.ttf') format('woff2');
 }
