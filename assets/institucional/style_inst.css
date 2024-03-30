@@ -239,6 +239,36 @@ li{
     display: none;
 }
 
+.divFooter{
+    display: flex;
+    background-color: #eb0033;
+    color: white;
+    font-family: 'fontRegular';
+    padding: 100px;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.ajuda, .comunidade{
+    display: flex;
+}
+
+.sobre{
+    padding-right: 30px;
+}
+
+.copy{
+    background-color: #890019;
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    color: white;
+    font-family: 'fontRegular';
+}
+
+.copy>p{
+    margin-left: auto;
+}
+
 @media screen and (max-width: 991px){
 
     body{
@@ -269,12 +299,41 @@ li{
         text-align: center;
     }
 
+    .TituloMain{
+        font-size: 35px;
+        margin-bottom: 20px !important;
+    }
+
+    .divTitulosMain{
+        padding: 0;
+    }
+
     .segundoTituloMain{
         margin-top: 50px !important;
     }
 
-    .divSegundoTitulosMain{
+    .divSegundoTitulosMain, .divTerceiroTitulosMain{
         padding: 0;
+    }
+
+    .quartaDivMain{
+        padding: 40px;
+    }
+
+    .cards{
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card1, .card2, .card3{
+        margin: 20px;
+    }
+
+    .divBtnCard{
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 10px 0;
     }
 
     .headerNavBar, main{
@@ -310,6 +369,26 @@ li{
         text-align: center;
     }
 
+    .sobre, .ajuda, .comunidade{
+        line-height: 30px;
+    }
+
+    .divFooter{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .p-footer{
+        margin: 5px;
+    }
+
+    .copy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 @font-face {
